@@ -1,0 +1,592 @@
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+  	font-family: arial;
+
+}
+a {
+	color: #93268f;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+section{
+	overflow: hidden;
+}
+
+/*header section css starts*/
+
+#logo {
+    max-width: 100%;
+    max-height: 130px;
+    transition-duration: 0.6s;   
+}
+.navbar{
+	overflow: hidden;
+}
+a.nav-link.py-1 {
+    font-family: arial;
+    font-weight: 900;
+    font-size: 20px;
+}
+ul.navbar-nav.ml-auto.small.mb-2.mb-md-0 {
+    margin-top: 30px;
+}
+ul.navbar-nav.ml-auto.small.mb-2.mb-md-0 li.nav-item {
+    padding: 0px 8px;
+}
+ul.col-md-4.col-sm-4.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+    justify-content: space-between;
+}
+ul.col-md-4.col-sm-4.navbar-nav:nth-child(2) {
+    justify-content: space-evenly;
+}
+.secondNav {
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    background: #F58320;
+}
+.secondNav ul{
+	display: flex;
+	flex-direction: row;
+
+}
+.secondNav ul li.nav-item {
+    padding: 0px 13px;
+}
+.secondNav ul li a.nav-link.py-1 {
+    color: white;
+    font-family: arial;
+    font-weight: 700;
+    font-size: 21px;
+}
+
+
+.collapsing {
+    transition: .5s!important;
+}
+.header{
+     position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    background-color: white;
+  transition-duration: 0.6s;
+}
+.bg-light {
+    background-color: white!important;
+}
+ul.navbar-nav.ml-auto.small.mb-2.mb-md-0 .nav-item a.nav-link.py-1 {
+    color: #231F20;
+}
+/* jQuery Styles
+===================================*/
+.navbar-scroll {
+  background: #ffffff;
+  padding: 0;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.6s;
+}
+.nav-dropdown-scroll {
+  background: #e7eaea;
+  box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.4);
+}
+
+.smallLogo{
+  max-height: 90px!important;
+ transition-duration: 0.6s;
+}
+
+/*toggle button start*/
+.fas, .fa-times{
+transition-duration: 0.5s!important;
+}
+
+.navbar-collapse{
+transition-duration: 0.5s!important;
+text-align: center;
+}
+/*search option css starts*/
+.collapse .input-group>.custom-file,.collapse .input-group>.custom-select, .collapse .input-group>.form-control,.collapse .input-group>.form-control-plaintext {
+    background: #F2F3F4;
+    font-family: fantasy;
+}
+.collapse .input-group{
+	margin-left: auto;
+    box-shadow: 3px 5px 7px #aaaaaa;
+    border-radius: 15px;
+}
+.collapse .form-control {
+    color: #929497;
+}
+.border-dark {
+     border:none;
+}
+.btn-outline-secondary {
+    background: #F2F3F4;
+    border:none;
+}
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+.parallax .input-group>.custom-file, .parallax .input-group>.custom-select, .parallax .input-group>.form-control, .parallax .input-group>.form-control-plaintext {
+    background: #F2F3F4;
+    width: 350px;
+    height: 75px;
+    font-weight: 900;
+    margin: auto;
+    margin-left: 10px;
+}
+.parallax .btn-outline-secondary {
+    background-color: #F58320;
+    border: none;
+    font-size: 25px;
+    color: white;
+    font-weight: 900;
+    margin: auto;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+.parallax .input-group {
+    margin-left: auto;
+    box-shadow: 5px 8px 15px;
+    background-color: #F2F3F4;
+    border-radius: 15px;
+}
+
+.parallax .form-control {
+    font-size: 24px;
+    color: rgb(146,148,151);
+}
+
+/*search option css starts*/
+/*header section css ends*/
+
+/*Paralax Css Starts*/
+.parallax {
+  /* The image used */
+  background-image: url("../Images/parallaxbg.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: unset;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+      overflow: hidden;
+}
+.parallaxContents {
+  position: absolute;
+  background: rgba(0,0,0,0.18);
+  width: 100%;
+  height: 100%;
+  top: -25%;
+  left: 1%;
+   padding: 360px 20px;
+}
+.parallaxContents img{
+  width:100%;
+   height:110px;
+}
+/*Paralax Css Ends*/
+
+/*Sevice Section Strats*/
+section.service.container-fluide {
+    padding: 40px 30px;
+}
+.col-md-3.col-sm-12.serviceDiv {
+    border: 2px solid #dadada;
+    background-color: #F2F3F4;
+    height: 80px;
+    box-shadow: 1px 1px 10px #aaaaaa;
+    border-radius: 15px;
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+.row.serviceRow {
+    justify-content: space-evenly;
+}
+.row.serviceRow:nth-child(2),.row.serviceRow:nth-child(3) {
+    margin-top: 25px;
+}
+/*Sevice Section Ends*/
+
+/*Footer Section starts*/
+
+.footer {
+    background-color: #E4BF58;
+    padding: 40px 30px;
+}
+.col-md-12.col-sm-12.footerArea {
+    display: flex;
+}
+
+.footerAreaCol {
+    justify-content: space-between;
+    display: flex;
+}
+.footerAreaCol:nth-child(2){
+	justify-content: space-between;
+}
+.footerAreaCol li.nav-item a {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+}
+
+.footerAreaCol h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.footerAreaCol div div {
+    display: flex;
+    justify-content: space-between;
+}
+.col-md-12.col-sm-12.footerText a img {
+    width: 50%;
+}
+.col-md-12.col-sm-12.footerText a {
+    margin-right: -35px;
+}
+.col-md-12.col-sm-12.footerText {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    padding-right: 50px;
+}
+/*.col-md-12.col-sm-12.footerText p {
+    font-size: 15px;
+    margin-right: 10px;
+}*/
+/*Footer Section Ends*/
+
+/* ===================================Media Query===================================== */
+
+/* Small/Mobile Screen control */
+@media only screen and (min-width: 300px) and (max-width: 500px){
+    /*header section css starts*/
+
+	.logoImg{
+		width: 35%;
+	}
+	.smallLogo {
+	    max-height: 55px!important;
+	}
+	a.nav-link.py-1 {
+	    font-weight: 900;
+	    font-size: 12px;
+	}
+	ul.navbar-nav.ml-auto.small.mb-2.mb-md-0 {
+	    text-align: right;
+	}
+	.secondNav {
+    padding: 0px 20px;
+    flex-direction: column;
+	}
+	ul.col-md-4.col-sm-4.navbar-nav {
+	    flex-direction: row;
+	}
+	.secondNav ul li.nav-item {
+	    padding: 0px 5px;
+	}
+	.secondNav ul li a.nav-link.py-1 {
+	    font-size: 11px;
+	}
+	#logo {
+	    max-height: 70px;
+	}
+	.collapse .input-group {
+	    width: 65%;
+	}
+	.secondNav ul {
+	    justify-content: space-evenly;
+	}
+	.billing div ul {
+    padding: 0px 5px 0px 0px;
+}
+	/*header section css ends*/
+
+	/*Paralax bg css Start*/
+	.parallax {
+   		 min-height: 350px;
+	}
+	.parallax {
+    background-position: center;
+	}
+	.parallaxContents {
+	    left: 3%;
+	    padding: 360px 10px;
+	}
+	.parallax .input-group>.custom-file, .parallax .input-group>.custom-select, .parallax .input-group>.form-control, .parallax .input-group>.form-control-plaintext {
+	    width: 130px;
+	    height: 48px;
+	    font-size: 10px;
+	}
+	.parallax .btn-outline-secondary {
+	    font-size: 15px;
+	}
+	.parallaxContents {
+	  top: -50%;
+	}
+	.parallax .btn-outline-secondary{
+		font-size: 15px;
+	}
+	/*Paralax bg css ends*/
+
+	/*Service Section css Starts*/
+	
+	/*Service Section css Ends*/
+
+	/*Footer Section css Starts*/
+	.footerAreaCol h3 {
+	    font-size: 10px;
+	}
+	.footerAreaCol li.nav-item a {
+	    font-size: 10px;
+	}
+	.footerAreaCol {
+	    display: flex;
+	    justify-content: space-between;
+	}
+	.footerAreaCol:nth-child(2) {
+	    justify-content: space-between;
+	}
+	.footerAreaCol:nth-child(2),.footerAreaCol:nth-child(3) {
+    margin-top: 20px;
+	}
+/*	.col-md-12.col-sm-12.footerText p {
+	    font-size: 10px;
+	}*/
+	.col-md-12.col-sm-12.footerText a img {
+	    width: 30%;
+	}
+	.col-md-12.col-sm-12.footerText a {
+    margin-right: -60px;
+}
+	.col-md-12.col-sm-12.footerText {
+    justify-content: center;
+    padding-right: 0px;
+}
+	.row.serviceRow:nth-child(2), .row.serviceRow:nth-child(3) {
+	    margin-top: 5px;
+	}
+	.col-md-3.col-sm-12.serviceDiv {
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	    margin-top: 20px;
+	    height: 50px;
+	}
+	/*Footer Section css Ends*/
+     
+    }
+    /* tablet Screen control */
+@media only screen and (min-width: 501px) and (max-width: 780px){
+
+    /*header section css starts*/
+	a.nav-link.py-1 {
+	    font-size: 10px;
+	}
+	ul.navbar-nav.ml-auto.small.mb-2.mb-md-0 {
+    margin-top: 15px;
+	}
+	.secondNav {
+    padding: 0px 20px;
+	}
+	.secondNav ul li.nav-item {
+	    padding: 0px 5px;
+	}
+	.secondNav ul li a.nav-link.py-1 {
+	    font-size: 11px;
+	}
+	.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0px;
+    padding-left: 0px;
+	}
+
+	/*header section css ends*/
+
+	/*Paralax bg css Start*/
+	.parallax {
+   		 min-height: 350px;
+	}
+	.parallax .btn-outline-secondary{
+		font-size: 17px;
+	}
+	/*Paralax bg css ends*/
+
+	/*Service Section css Starts*/
+	.col-md-3.col-sm-12.serviceDiv {
+	    height: 55px;
+	}
+	.parallax .input-group>.custom-file, .parallax .input-group>.custom-select, .parallax .input-group>.form-control, .parallax .input-group>.form-control-plaintext {
+	    width: 240px;
+    	height: 50px;
+	}
+	.parallax .form-control {
+	    font-size: 16px;
+	}
+	.parallaxContents {
+	  top: -55%;
+	}
+	/*Service Section css Ends*/
+
+	/*Footer Section css Starts*/
+	.footerAreaCol h3 {
+	    font-size: 12px;
+	}
+	.footerAreaCol li.nav-item a {
+	    font-size: 9px;
+	}
+/*	.col-md-12.col-sm-12.footerText p {
+	    font-size: 12px;
+	}
+*/
+	.col-md-12.col-sm-12.footerText a img {
+    width: 40%;
+}
+.col-md-12.col-sm-12.footerText a {
+    margin-right: -50px;
+}
+	/*Footer Section css Ends*/
+
+}
+
+/* laptop Screen control */
+@media only screen and (min-width: 781px) and (max-width: 1050px){
+
+    /*header section css starts*/
+	a.nav-link.py-1 {
+	    font-weight: 900;
+	    font-size: 13px;
+	}
+	.secondNav {
+    padding: 0px 20px;
+	}
+	.secondNav ul li.nav-item {
+	    padding: 0px 5px;
+	}
+	.secondNav ul li a.nav-link.py-1 {
+	    font-size: 14px;
+	}
+	ul.navbar-nav.ml-auto.small.mb-2.mb-md-0 li.nav-item {
+    padding: 0px 5px;
+	}
+	/*header section css ends*/
+
+	/*Paralax bg css Start*/
+	.parallax {
+   		 min-height: 350px;
+	}
+	.parallax .input-group>.custom-file, .parallax .input-group>.custom-select, .parallax .input-group>.form-control, .parallax .input-group>.form-control-plaintext {
+	    width: 280px;
+    	height: 50px;
+	}
+	.parallax .btn-outline-secondary{
+		font-size: 17px;
+	}
+	/*Paralax bg css ends*/
+
+	/*Service Section css Starts*/
+	.col-md-3.col-sm-12.serviceDiv {
+	    height: 55px;
+	}
+	.parallax .form-control {
+	    font-size: 20px;
+	}
+	.parallaxContents {
+	  top: -55%;
+	}
+
+	/*Service Section css Ends*/
+
+	/*Footer Section css Starts*/
+	.footerAreaCol h3 {
+	    font-size: 15px;
+	}
+	.footerAreaCol li.nav-item a {
+	    font-size: 11px;
+	}
+	/*Footer Section css Ends*/
+}
+
+
+/* PC Screen control */
+@media only screen and (min-width: 1051px) and (max-width: 1487px){
+
+	/*header section css starts*/
+	.secondNav {
+    padding: 0px 20px;
+	}
+	.secondNav ul li.nav-item {
+	    padding: 0px 9px;
+	}
+	.secondNav ul li a.nav-link.py-1 {
+	    font-size: 20px;
+	}
+
+	/*header section css ends*/
+
+	/*Paralax bg css Start*/
+	.parallax {
+   		min-height: 400px;
+	}
+	.parallax .form-control {
+	    font-size: 24px;
+	    color: rgb(146,148,151);
+	}
+	.collapse .form-control {
+	    color: #929497;
+	}
+	.parallaxContents {
+	  top: -35%;
+	}
+	/*Paralax bg css ends*/
+
+	/*Service Section css Starts*/
+	
+	/*Service Section css Ends*/
+
+	/*Footer Section css Starts*/
+	.footerAreaCol h3 {
+	    font-size: 20px;
+	}
+	.footerAreaCol li.nav-item a {
+	    font-size: 15px;
+	}
+	/*Footer Section css Ends*/
+
+}
